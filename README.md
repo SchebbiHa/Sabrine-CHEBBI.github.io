@@ -1,0 +1,5 @@
+- Introduction (Hello, I'm Sabrine CHEBBI...)
+- CV (downloadable or viewable PDF)
+- Activities (research, teaching, projects)
+- Publications (papers, articles)
+- Contact info
