@@ -2,37 +2,72 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title> Sabrine CHEBBI - Personal Website</title>
+  <title>Sabrine CHEBBI - Personal Website</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f7f9fc;
+      background-color: #f4f8fb;
       color: #333;
     }
     header {
-      background-color: #004080;
+      background: linear-gradient(to right, #003366, #004080);
       color: white;
-      padding: 2rem;
+      padding: 2rem 1rem;
       text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    header h1 {
+      margin: 0.2rem 0;
+      font-size: 2.5rem;
     }
     section {
       padding: 2rem;
       max-width: 900px;
-      margin: auto;
+      margin: 2rem auto;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
     h2 {
       color: #004080;
+      border-bottom: 2px solid #cce0ff;
+      padding-bottom: 0.5rem;
     }
     a {
       color: #004080;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .highlight {
+      color: #004080;
+      font-weight: bold;
+    }
+    ul {
+      padding-left: 1.2rem;
+    }
+    li {
+      margin-bottom: 1rem;
+    }
+    .authors {
+      display: block;
+      font-style: italic;
+      color: #555;
+      margin-top: 0.2rem;
     }
     footer {
-      background-color: #e0e0e0;
+      background-color: #003366;
+      color: white;
       text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
+      padding: 1.5rem 1rem;
+      font-size: 0.9rem;
+    }
+    footer p {
+      margin: 0.4rem 0;
     }
   </style>
 </head>
@@ -40,41 +75,9 @@
 
 <header>
   <h1>Sabrine CHEBBI</h1>
-  <p> Postdoctoral researcher at Inria, Lille </p>
-   <p> Université de Lille </p>
-  <p> CRISTAL </p>
+  <p>Postdoctoral Researcher at Inria, Lille</p>
+  <p>Université de Lille – CRIStAL – Scool Team</p>
 </header>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>About Me</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      margin: 2rem;
-      background-color: #f9f9f9;
-      color: #333;
-    }
-
-    .highlight {
-      color: #004080; /* bleu foncé */
-      font-weight: bold;
-    }
-
-    section {
-      max-width: 800px;
-      margin: auto;
-      background-color: white;
-      padding: 2rem;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-  </style>
-</head>
-<body>
 
 <section>
   <h2>About Me</h2>
@@ -82,19 +85,17 @@
     I am currently a <span class="highlight">postdoctoral researcher</span> at 
     <span class="highlight">Inria Lille</span>, France, affiliated with the 
     <span class="highlight">CRIStAL Laboratory</span> and the 
-    <span class="highlight">Scool research team</span>.
-    Prior to this, I held a postdoctoral position at 
+    <span class="highlight">Scool research team</span>. Prior to this, I held a postdoctoral position at 
     <span class="highlight">AIMS South Africa</span> and was a member of the 
     <span class="highlight">Decision Making group</span> within the 
     <span class="highlight">Computer Science Department</span> at the 
-    <span class="highlight">University of Tübingen</span>, Germany.
+    <span class="highlight">University of Tübingen</span>, Germany. 
     I completed my <span class="highlight">PhD</span> at the 
-    <span class="highlight">Nonlinear Analysis and Geometry Laboratory (LR21ES08)</span>, 
-    under the supervision of <span class="highlight">Ahmed Bchatnia</span> and 
+    <span class="highlight">Nonlinear Analysis and Geometry Laboratory (LR21ES08)</span>, under the supervision of 
+    <span class="highlight">Ahmed Bchatnia</span> and 
     <span class="highlight">Makram Hamouda</span>.
   </p>
 </section>
-
 
 <section>
   <h2>CV</h2>
@@ -107,10 +108,10 @@
   <h2>Interests</h2>
   <ul>
     <li>Research in machine learning models</li>
-    <li>Teaching Applied mathematic </li>
-   
+    <li>Teaching Applied Mathematics</li>
   </ul>
 </section>
+
 <section id="publications">
   <h2>Publications</h2>
   <ul>
@@ -120,47 +121,39 @@
       </a>
       <span class="authors">Bubacarr Bah, Sabrine Chebbi, Makram Hamouda, Joseph Muthui Wacira (Preprint)</span>
     </li>
-
     <li>
       <a href="https://link.springer.com/article/10.1007/s10231-023-01386-z" target="_blank">
         Analysis of a system modelling the interaction between the motion of a spring and a viscous gas
-        </a>
+      </a>
       <span class="authors">Sabrine Chebbi, Václav Mácha, Šárka Nečasová — Submitted to Annals of Pure and Applied Mathematics (Apr 2023)</span>
     </li>
-
     <li>
       <a href="https://link.springer.com/article/10.1007/s40065-024-00473-0" target="_blank">
         Nonlinear damping effects for the 2D Mindlin–Timoshenko system
-    </a>
+      </a>
       <span class="authors">A. Bchatnia, S. Chebbi, M. Hamouda — Arabian Journal of Mathematics 13, 485–512 (2024)</span>
     </li>
-
     <li>
-     <a href="https://link.springer.com/article/10.1007/s40314-019-0982-6" target="_blank">
+      <a href="https://link.springer.com/article/10.1007/s40314-019-0982-6" target="_blank">
         Discrete energy behavior of a damped Timoshenko system
       </a>
       <span class="authors">Sabrine Chebbi, Makram Hamouda — Computational and Applied Mathematics 39 (March 2020)</span>
     </li>
-
     <li>
       <a href="https://journals.sagepub.com/doi/abs/10.3233/ASY-191519" target="_blank">
         Lower Bound and Optimality for a Nonlinearly Damped Timoshenko System with Thermoelasticity
-    </a>
+      </a>
       <span class="authors">A. Bchatnia, S. Chebbi, M. Hamouda, A. Soufyane — Asymptotic Analysis 114(1-2):73–91 (March 2019)</span>
     </li>
   </ul>
 </section>
 
-
-
 <footer>
-  <p>Inria Lille - Nord Europe
-Equipe Scool, Bureau A06<p>
-<p>40, avenue du Halley
-59650 Villeneuve d'Ascq, FRANCE<p>
-   <p> sabrine.chebbi-at-inria.fr 
-   +33676752032 </p>
+  <p>Inria Lille - Nord Europe, Scool Team, Office A06</p>
+  <p>40, avenue du Halley, 59650 Villeneuve d'Ascq, FRANCE</p>
+  <p>Email: sabrine.chebbi@inria.fr | Phone: +33 6 76 75 20 32</p>
 </footer>
 
 </body>
 </html>
+
