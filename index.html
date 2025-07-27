@@ -5,42 +5,6 @@
   <title>Sabrine CHEBBI - Personal Website</title>
   <meta name="google-site-verification" content="Bn_P3VdBpCan1OtK3St9JhoIf7zB4O9ZcfLLePWrQzo" />
   <style>
-    .sidebar {
-  position: fixed;
-  top: 120px;
-  left: 0;
-  width: 180px;
-  background-color: #ffffff;
-  border-right: 2px solid #ec407a;
-  padding: 1rem;
-  height: 100%;
-  box-shadow: 2px 0 6px rgba(0,0,0,0.1);
-  z-index: 1000;
-}
-.sidebar ul {
-  list-style-type: none;
-  padding: 0;
-}
-.sidebar ul li {
-  margin: 1rem 0;
-}
-.sidebar ul li a {
-  text-decoration: none;
-  color: #ec407a;
-  font-weight: bold;
-  transition: color 0.3s;
-}
-.sidebar ul li a:hover {
-  color: #d81b60;
-}
-
-    <nav style="background-color: #ec407a; padding: 1rem; text-align: center;">
-  <a href="#about" style="margin: 0 1rem; color: white; font-weight: bold; text-decoration: none;">Home</a>
-  <a href="#projects" style="margin: 0 1rem; color: white; font-weight: bold; text-decoration: none;">Projects</a>
-  <a href="#publications" style="margin: 0 1rem; color: white; font-weight: bold; text-decoration: none;">Publications</a>
-  <a href="#education" style="margin: 0 1rem; color: white; font-weight: bold; text-decoration: none;">Education</a>
-</nav>
-
     body {
       font-family: Georgia, "Times New Roman", serif;
       margin: 0;
@@ -50,15 +14,48 @@
       line-height: 1.6;
     }
 
-<div class="sidebar">
-  <ul>
-    <li><a href="#about">About</a></li>
-    <li><a href="#education">Education</a></li>
-    <li><a href="#projects">Projects</a></li>
-    <li><a href="#publications">Publications</a></li>
-    <li><a href="#actualities">Actualities</a></li>
-  </ul>
-</div>
+    /* Sidebar outline */
+    .sidebar {
+      position: fixed;
+      top: 120px;
+      left: 0;
+      width: 180px;
+      background-color: #ffffff;
+      border-right: 2px solid #ec407a;
+      padding: 1rem;
+      height: 100%;
+      box-shadow: 2px 0 6px rgba(0,0,0,0.1);
+      z-index: 1000;
+    }
+    .sidebar ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    .sidebar ul li {
+      margin: 1rem 0;
+    }
+    .sidebar ul li a {
+      text-decoration: none;
+      color: #ec407a;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    .sidebar ul li a:hover {
+      color: #d81b60;
+    }
+
+    nav {
+      background-color: #ec407a;
+      padding: 1rem;
+      text-align: center;
+      margin-left: 180px;
+    }
+    nav a {
+      margin: 0 1rem;
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+    }
 
     header {
       background-color: #0a2540;
@@ -66,6 +63,7 @@
       padding: 2rem 1rem;
       text-align: center;
       border-bottom: 4px solid #7a1435;
+      margin-left: 180px;
     }
     header h1 {
       margin: 0.2rem 0;
@@ -85,13 +83,16 @@
       margin-top: 1rem;
       border: 3px solid #7a1435;
     }
+
     section {
       max-width: 900px;
       margin: 2rem auto;
       padding: 2rem 2.5rem;
       background-color: #fafafa;
       border-left: 6px solid #7a1435;
+      margin-left: 200px;
     }
+
     h2 {
       font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
       font-weight: 700;
@@ -101,16 +102,20 @@
       border-bottom: 2px solid #ddd;
       padding-bottom: 0.3rem;
     }
+
     p, li {
       font-size: 1rem;
       color: #222;
     }
+
     ul {
       padding-left: 1.5rem;
     }
+
     li {
       margin-bottom: 1rem;
     }
+
     a {
       color: #0a2540;
       text-decoration: none;
@@ -118,14 +123,17 @@
       border-bottom: 1px solid transparent;
       transition: border-bottom 0.3s ease;
     }
+
     a:hover {
       border-bottom: 1px solid #7a1435;
       color: #7a1435;
     }
+
     .highlight {
       font-weight: 700;
       color: #000;
     }
+
     .authors {
       font-style: italic;
       color: #555;
@@ -133,6 +141,7 @@
       display: block;
       margin-top: 0.3rem;
     }
+
     footer {
       background-color: #0a2540;
       color: #f0f0f0;
@@ -141,7 +150,9 @@
       font-size: 0.9rem;
       border-top: 4px solid #7a1435;
       margin-top: 3rem;
+      margin-left: 180px;
     }
+
     footer p {
       margin: 0.3rem 0;
     }
@@ -149,13 +160,36 @@
 </head>
 <body>
 
-<header>
+<!-- Outline Sidebar -->
+<div class="sidebar">
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#publications">Publications</a></li>
+    <li><a href="#interests">Interests</a></li>
+    <li><a href="#cv">CV</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</div>
+
+<!-- Top Menu -->
+<nav>
+  <a href="#about">Home</a>
+  <a href="#projects">Projects</a>
+  <a href="#publications">Publications</a>
+  <a href="#education">Education</a>
+</nav>
+
+<!-- Header -->
+<header id="about">
   <h1>Sabrine CHEBBI</h1>
   <p style="color: white;">Postdoctoral Researcher at Inria, Lille</p>
   <p style="color: white;">Université de Lille – CRIStAL – Scool Team</p>
-   <img class="profile-pic" src="photo.jpg" alt="Sabrine Chebbi Photo">
+  <img class="profile-pic" src="photo.jpg" alt="Sabrine Chebbi Photo">
 </header>
 
+<!-- Sections -->
 <section>
   <h2>About Me</h2>
   <p>
@@ -174,94 +208,58 @@
   </p>
 </section>
 
-<section>
+<section id="education">
   <h2>Education</h2>
   <ul>
     <li>🎓 <span class="highlight">PhD in Mathematics</span>, Nonlinear Analysis and Geometry Laboratory (LR21ES08), Tunisia</li>
-    <li>🎓 <span class="highlight">Master’s Degree in Mathematics</span>, National Engineers School of Tunis, Tunisia </li>
-    <li>🎓 <span class="highlight">Bachelor’s Degree in Mathematics</span>, Faculty of Science of Tunis, Tunisia </li>
+    <li>🎓 <span class="highlight">Master’s Degree in Mathematics</span>, National Engineers School of Tunis, Tunisia</li>
+    <li>🎓 <span class="highlight">Bachelor’s Degree in Mathematics</span>, Faculty of Science of Tunis, Tunisia</li>
   </ul>
 </section>
+
 <section id="projects">
   <h2>Projects</h2>
   <ul>
-    <li>
-      <strong>Physics-informed Neural Networks</strong><br>
-     Using machine learning to improve predictions in structural mechanics.
-     Modeling of Timoshenko systems with thermoelasticity and damping, using PINNs techniques.
-    </li>
-    <li>
-      <strong>Numerical Simulation of Coupled PDEs</strong><br>
-      Analysis and implementation of stable schemes for nonlinear hyperbolic systems.
-    </li>
-    <li>
-      <strong>Analysis of a system modelling the interaction between the motion of a spring
-and a viscous gas </strong><br>
-    
-    </li>
+    <li><strong>Physics-informed Neural Networks</strong><br>Using machine learning to improve predictions in structural mechanics.</li>
+    <li><strong>Numerical Simulation of Coupled PDEs</strong><br>Stable schemes for nonlinear hyperbolic systems.</li>
+    <li><strong>Spring and Viscous Gas Interaction</strong></li>
   </ul>
 </section>
 
-<section>
+<section id="cv">
   <h2>CV</h2>
-  <p>You can download my CV here:
-    <a href="cv.pdf" target="_blank">Download CV (PDF)</a>
-  </p>
+  <p>You can download my CV here: <a href="cv.pdf" target="_blank">Download CV (PDF)</a></p>
 </section>
 
-<section>
+<section id="interests">
   <h2>Interests</h2>
   <ul>
     <li>Research in machine learning</li>
-    <li>Theoretical and numerical analysis of hyperbolic Partial differential equations PDE</li>
+    <li>Theoretical and numerical analysis of hyperbolic PDEs</li>
     <li>Optimization, Stochastic Approximation</li>
-    <li>Dynamic Systems and Modeling.</li>
+    <li>Dynamic Systems and Modeling</li>
   </ul>
 </section>
-
 
 <section id="publications">
   <h2>Publications</h2>
   <ul>
-    <li>
-      <a href="https://arxiv.org/abs/2409.15872" target="_blank">
-        Physics-informed neural networks for Timoshenko system with thermoelasticity
-      </a>
-      <span class="authors">Bubacarr Bah, Sabrine Chebbi, Makram Hamouda, Joseph Muthui Wacira (Preprint)</span>
-    </li>
-    <li>
-      <a href="https://link.springer.com/article/10.1007/s10231-023-01386-z" target="_blank">
-        Analysis of a system modelling the interaction between the motion of a spring and a viscous gas
-      </a>
-      <span class="authors">Sabrine Chebbi, Václav Mácha, Šárka Nečasová — Submitted to Annals of Pure and Applied Mathematics (Apr 2023)</span>
-    </li>
-    <li>
-      <a href="https://link.springer.com/article/10.1007/s40065-024-00473-0" target="_blank">
-        Nonlinear damping effects for the 2D Mindlin–Timoshenko system
-      </a>
-      <span class="authors">A. Bchatnia, S. Chebbi, M. Hamouda — Arabian Journal of Mathematics 13, 485–512 (2024)</span>
-    </li>
-    <li>
-      <a href="https://link.springer.com/article/10.1007/s40314-019-0982-6" target="_blank">
-        Discrete energy behavior of a damped Timoshenko system
-      </a>
-      <span class="authors">Sabrine Chebbi, Makram Hamouda — Computational and Applied Mathematics 39 (March 2020)</span>
-    </li>
-    <li>
-      <a href="https://journals.sagepub.com/doi/abs/10.3233/ASY-191519" target="_blank">
-        Lower Bound and Optimality for a Nonlinearly Damped Timoshenko System with Thermoelasticity
-      </a>
-      <span class="authors">A. Bchatnia, S. Chebbi, M. Hamouda, A. Soufyane — Asymptotic Analysis 114(1-2):73–91 (March 2019)</span>
-    </li>
+    <li><a href="https://arxiv.org/abs/2409.15872" target="_blank">Physics-informed neural networks for Timoshenko system</a><span class="authors">Bah, Chebbi, Hamouda, Wacira (Preprint)</span></li>
+    <li><a href="https://link.springer.com/article/10.1007/s10231-023-01386-z" target="_blank">Interaction between spring and viscous gas</a><span class="authors">Chebbi, Mácha, Nečasová</span></li>
+    <li><a href="https://link.springer.com/article/10.1007/s40065-024-00473-0" target="_blank">2D Mindlin–Timoshenko damping</a><span class="authors">Bchatnia, Chebbi, Hamouda</span></li>
+    <li><a href="https://link.springer.com/article/10.1007/s40314-019-0982-6" target="_blank">Damped Timoshenko system</a><span class="authors">Chebbi, Hamouda</span></li>
+    <li><a href="https://journals.sagepub.com/doi/abs/10.3233/ASY-191519" target="_blank">Lower Bound & Optimality - Thermoelastic Timoshenko</a><span class="authors">Bchatnia, Chebbi, Hamouda, Soufyane</span></li>
   </ul>
 </section>
 
-<footer>
+<!-- Contact Footer -->
+<footer id="contact">
   <p style="color: white;">Inria Lille - Nord Europe, Scool Team, Office A06</p>
-  <p style="color: white;"> 40, avenue du Halley, 59650 Villeneuve d'Ascq, FRANCE</p>
-  <p style="color: white;"> Email: sabrine.chebbi@inria.fr | Phone: +33 6 76 75 20 32</p>
+  <p style="color: white;">40, avenue du Halley, 59650 Villeneuve d'Ascq, FRANCE</p>
+  <p style="color: white;">Email: sabrine.chebbi@inria.fr | Phone: +33 6 76 75 20 32</p>
 </footer>
 
 </body>
 </html>
+
 
