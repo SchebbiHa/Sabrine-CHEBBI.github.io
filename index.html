@@ -41,10 +41,12 @@
       font-style: italic;
     }
 
-   header img {
-  width: 140px;
-  height: 140px;
-  border-radius: 50%; /* <-- ça rend l'image circulaire */
+ header img {
+  width: 220px;
+  height: auto;        /* garde les proportions */
+  aspect-ratio: 1 / 1; /* force un carré */
+  border-radius: 50%;
+  object-fit: cover;   /* évite la déformation */
   border: 3px solid #fff;
   margin-top: 1rem;
   box-shadow: 0 4px 10px rgba(0,0,0,0.3);
